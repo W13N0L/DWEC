@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Ejer_01</title>
+</head>
+
+<body>
+    <h1>Ejercicios</h1>
+    <br><br>
+    <p>
+        Ejercicio1.1: Variable, Tipos de Dato y Strings <br>
+        <br><br>
+        1. Declara una variable 'nombre' usando 'const' y asignale tu nombre <br>
+        2. Declara una variable 'edad' usando 'let' y asignale tu edad <br>
+        3. Declara una variable 'tieneMascota' usando 'const' y asignale un valor booleano <br>
+        4. Reasigna en consola el valor y el tipo de cada una de las tres variables <br>
+        5. Imprime en consola el valor y el tipo de cada una de las tres variables <br>
+        6. Crea una frase que describa a una persona usando Template Strings, por ejemplo: "Juan tiene 30 años y no tiene mascota.". Imprimela en consola
+        <!-- <script src="scripts/ejer1-1.js"></script> -->
+    </p>
+    <br><br>
+    <p>
+        Ejercicio 1.2: Objetos y su Manipulación
+        <br><br>
+        1. Crea un objeto 'coche' con las propiedades: 'marca' (string), 'modelo' (string), 'año' (number) y 'estaDisponible' (boolean). <br>
+        2. Muestra el objetocompleto en consola utilizando console.table().   <br>
+        3. Usa la desestructuración (destructuring) para extraer la 'marca' y el 'modelo' en variables separadas e imprímelas en consola.   <br>
+        4. Cambia el valor de la propiedad 'estaDisponible' a 'true'.   <br>
+        5. Agrega una nueva propiedad 'color' al objeto.   <br>
+        6. Elimina la propiedad 'año' del objeto.   <br>
+        7. Vuelve a imprimir el objeto modificado en consola <br>
+        <!-- <script src="scripts/ejer1-2.js"></script> -->
+    </p>
+    <br><br>
+    <p>
+        Ejercicio 1.3: Combinando Objetos
+        <br><br>
+        1. Crea un objeto ‘producto’ con las propiedades: ‘nombre’ (string), ‘precio’ (number). <br>
+        2. Crea un objeto ‘cliente’ con las propiedades: ‘nombreCliente’ (string), ‘esPremium’ (boolean). <br>
+        3. Combina ambos objetos en un nuevo objeto llamado ‘pedido’ utilizando el Spread Operator (…). <br>
+        4. Muestra el objeto ‘pedido’ en consola. <br>
+        5. ¿Qué sucede si las propiedades de los objetos originales tienen el mismo nombre? Crea un nuevo objeto ‘producto2’ con la propiedad ‘nombre’ y combínalo con el objeto ‘cliente’ para ver el resultado. <br>
+        <!-- <script src="scripts/ejer1-3.js"></script> -->
+    </p>
+    <br><br>
+    <p>
+        Ejercicio 1.4: Arrays y sus Métodos
+        <br><br>
+        1. Crea un array llamado `ciudades` con los siguientes strings: `"Madrid"`, `"Buenos Aires"`, `"Tokio"`, `"Nueva York"`, `"París"`. <br>
+        2. Añade con otra sentencia `"Roma"` al final del array. <br>
+        3. Crea un nuevo array `ciudadesMayusculas` utilizando el método `.map()` que contenga todos los elementos del array original pero en mayúsculas. <br>
+        4. Crea un nuevo array `ciudadesFiltradas` utilizando el método `.filter()` que contenga solo los elementos que tienen más de 6 caracteres. <br>
+        5. Imprime los tres arrays en consola (`ciudades`, `ciudadesMayusculas`, `ciudadesFiltradas`). <br>
+        <!-- <script src="scripts/ejer1-4.js"></script> -->
+    </p>
+    <br><br>
+    <p>
+        Ejercicio 1.5: Uniendo todo
+        <br><br>
+        1. Crea un array de objetos llamado ‘estudiantes’. Cada objeto debe representar a un estudiante y tener las propiedades ‘nombre’ (string), ‘apellidos’ (string),‘calificacion’ (number) y ‘aprobado’ (boolean). Añade al menos 3 estudiantes. <br>
+        2. Utiliza el método .map() para crear un nuevo array donde a cada estudiante se le añade una propiedad ‘id’ única (puede ser 1, 2, 3…). <br>
+        3. Utiliza el método .filter() para obtener un array que contenga únicamente a los estudiantes que tienen una calificación mayor o igual a 5. <br>
+        4. Para cada estudiante en el array filtrado (los aprobados), imprime un mensaje en consola usando Template Strings que diga: “¡Felicidades [nombre], has aprobado con [calificacion]!”. <br>
+        5. Recorre el array original y verifica si el valor de la propiedad aprobado es coherente con la calificacion (es decir, si calificacion >= 5 entonces aprobado debe ser true, y si es menor, debe ser false). <br>
+        Si hay incoherencias, imprime un mensaje como: <br>
+        “⚠️ Incoherencia en el registro de [nombre]: calificación = [calificacion], aprobado = [aprobado]” <br>
+        <script src="scripts/ejer1-5.js"></script>
+    </p>
+    
+</body>
+</html>
