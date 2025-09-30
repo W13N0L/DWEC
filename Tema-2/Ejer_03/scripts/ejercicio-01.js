@@ -1,0 +1,3 @@
+// Ejercicio 3.1: Creando tu primera lista de reproducción
+// Crea un archivo `ejercicio-01.js`. Dentro de él, define un arreglo de objetos llamado `playlist`. Cada objeto representará una canción y debe tener las siguientes propiedades: `titulo` (string), `artista` (string) y `duracion` (número en segundos).
+// Agrega al menos 10 canciones a la `playlist`. Luego, utiliza un bucle `forEach` para imprimir en la consola el título y el artista de cada canción.
