@@ -8,13 +8,13 @@
 
 
 let empleados = [
-    { id, nombre, departamento, salario}
+    { id: 1, nombre: 'Ana', departamento: 'Ventas', salario: 3000 }
 ];
 
 
 export function agregarEmpleado(empleado) {
     empleados.push(empleado);
-}
+};
 
 export function eliminarEmpleado(id) {
     const index = empleados.findIndex(empleado => empleado.id === id);
@@ -24,5 +24,14 @@ export function eliminarEmpleado(id) {
 }
 
 export function buscarPorDepartamento(departamento){
-    return 
+    return empleados.filter (empleado => empleado.departamento === departamento);
+}
+
+export function calcularSalarioPromedio(){
+    const totalSalario = empleados.reduce((acumulador, empleado) => acumulador + empleado.salario, 0);
+    return totalSalario / empleados.length;
+}
+
+export function obtenerEmpleadosOrdenadosPorSalario(){
+    return [...empleados].sort((a, b) => b.salario - a.salario);
 }
